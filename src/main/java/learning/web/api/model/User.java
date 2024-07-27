@@ -1,7 +1,7 @@
 package learning.web.api.model;
 
 public class User {
-    private Integer id;
+    private static Integer id;
     private String login;
     private String password;
     public User() {}
@@ -18,7 +18,7 @@ public class User {
                 "}";
     }
 
-    public Integer getId() {
+    public static Integer getId() {
         return id;
     }
 
