@@ -12,7 +12,7 @@
 	<artifactId>my-first-web-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>my-first-web-api</name>
-	<description>Learning how to create an web API</description>
+	<description>Learning how to create a web API</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -39,6 +39,18 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<!-- SWAGGER -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
 		</dependency>
 	</dependencies>
 
