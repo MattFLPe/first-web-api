@@ -8,13 +8,11 @@ import springfox.documentation.service.Contact;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.Arrays;
 import java.util.HashSet;
 
 @Configuration
-@EnableSwagger2
 public class SwaggerConfig {
 
     private Contact contact() {
@@ -45,7 +43,7 @@ public class SwaggerConfig {
 
         docket
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("pacote.comseus.controllers"))
+                .apis(RequestHandlerSelectors.basePackage("learning.web.api.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(this.apiInformations().build())
